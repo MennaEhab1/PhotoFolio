@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>PhotoFolio - Gallery Single</title>
+</head>
+<body class="bg-black" onload="appear()">
+  <div class="load">
+    <div class="innerLoad">
+        <div class="spinner-grow" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+    </div>
+</div>
+  <nav class="navbar navbar-expand-lg bg-black border-bottom border-secondary position-fixed w-100" style="z-index: 999; height: 12vh;" aria-label="Thirteenth navbar example">
+    <div class="container-fluid bg-black">
+      <a class="navbar-brand col-4 fs-2" style="font-family: serif;" href="index.html"><span><i class="bi bi-camera text-success pe-1"></i></span>PhotoFolio</a>
+
+      <button class="navbar-toggler collapsed border-0 order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+      <div class="navbar-collapse d-lg-flex collapse " id="navbarsExample11">
+        <ul class="navbar-nav col-4 bg-black gap-3" >
+          <li class="nav-item">
+            <a class="nav-link text-uppercase active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="About.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-uppercase" href="Gallery.html" role="button"  aria-expanded="false">Gallery</a>
+            <ul class="dropdown-menu firstMenu border-0" style="background-color: #1a1a1a !important;">
+                <li><a class="dropdown-item text-secondary p-2" href="Gallery.html">Nature</a></li>
+                <li><a class="dropdown-item text-secondary p-2" href="Gallery.html">People</a></li>
+                <li><a class="dropdown-item text-secondary p-2" href="Gallery.html">Architecture</a></li>
+                <li><a class="dropdown-item text-secondary p-2" href="Gallery.html">Animals</a></li>
+                <li><a class="dropdown-item text-secondary p-2" href="Gallery.html">Sports</a></li>
+                <li><a class="dropdown-item text-secondary p-2" href="Gallery.html">Travel</a></li>
+                <li class="deepDropdown">
+                    <a class="dropdown-item position-relative text-secondary p-2" href="Gallery.html">
+                        Deep Dropdown
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                        </svg>
+                    </a>
+                    <div class="subMenu position-absolute border-0 bg-dark" style="left: -96%; top: 85%;">
+                        <ul class="list-unstyled" style="background-color: #1a1a1a !important;">
+                            <li class="p-1"><a class="text-decoration-none text-secondary p-2" href="Gallery.html">Deep Dropdown 1</a></li>
+                            <li class="p-1"><a class="text-decoration-none text-secondary p-2" href="Gallery.html">Deep Dropdown 2</a></li>
+                            <li class="p-1"><a class="text-decoration-none text-secondary p-2" href="Gallery.html">Deep Dropdown 3</a></li>
+                            <li class="p-1"><a class="text-decoration-none text-secondary p-2" href="Gallery.html">Deep Dropdown 4</a></li>
+                            <li class="p-1"><a class="text-decoration-none text-secondary p-2" href="Gallery.html">Deep Dropdown 5</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-uppercase" href="Services.html">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-uppercase" href="Contact.html">Contact</a>
+        </li>
+        </ul>
+        
+      </div>
+      <ul class="navbar-nav socialMedia col-4 justify-content-lg-end pe-4 flex-row gap-2">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="https://twitter.com/"><i class="bi bi-twitter-x"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+        </li>
+    </ul>
+    </div>
+  </nav>
+
+      <div id="hero" class="heroText text-center" style="padding-top: 150px; padding-bottom: 80px;">
+        <h1 class="head" style="font-family: serif; font-size: 65px;">Gallery Single</h1>
+        <p class="">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio <br> voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.
+        </p>
+        <button type="button" class="btn btn-success rounded-1 px-5 py-2 mt-3 text-uppercase">avaliable for hire</button>
+    </div>
+
+    <div>
+        <nav aria-label="breadcrumb" class="">
+          <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary ps-5" style="background-color: #1a1a1a !important;">
+            <li class="breadcrumb-item">
+              <a class="link-body-emphasis" href="index.html">
+                <i class="bi bi-house-door-fill text-success "></i>
+              </a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="link-body-emphasis fw-semibold text-decoration-none" href="Gallery-Single.html">Gallery-Single</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+       <!-- Main slider -->
+      <div class="container pt-4">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-success" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-success" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="bg-success" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="bg-success" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="bg-success" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/gallery-8.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/gallery-9.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/gallery-10.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/gallery-11.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/gallery-12.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/gallery-13.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-black rounded-5 p-4" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-black rounded-5 p-4" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+      <div class="describtion">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-lg-8 col-12">
+                    <h3 style="font-family: serif;">This is an example of portfolio details</h3>
+                    <p>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.</p>
+                    <p>Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque nesciunt molestiae laboriosam.</p>
+                    <p class="ps-4"> <i class="bi bi-quote text-success fs-4"></i> <em>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</em>   <i class="bi bi-quote quote-icon-right text-success fs-4"></i></p>
+                    <div class="avatar d-flex align-items-center">
+                        <img src="images/testimonials-2.jpg" style="height: 100px; width: 100px; border-radius: 50%;" alt=""> 
+                        <div class="text ps-3" style="font-family: serif;">
+                            <p class="fs-5">Sara Wilsson</p>
+                            <p class="text-secondary">Designer</p>
+                        </div>
+                    
+                    </div>
+                    <p class="pt-3">Impedit ipsum quae et aliquid doloribus et voluptatem quasi. Perspiciatis occaecati earum et magnam animi. Quibusdam non qui ea vitae suscipit vitae sunt. Repudiandae incidunt cumque minus deserunt assumenda tempore. Delectus voluptas necessitatibus est.</p>
+                    <p>Sunt voluptatum sapiente facilis quo odio aut ipsum repellat debitis. Molestiae et autem libero. Explicabo et quod necessitatibus similique quis dolor eum. Numquam eaque praesentium rem et qui nesciunt.</p>
+                </div>
+                <div class="col-lg-4 col-12"  >
+                    <div class="projectInfo" style="font-family: serif;">
+                    <h4>Project information</h4>
+                    </div>
+                    <ul class="pt-4 list-unstyled">
+                        <li class="pb-3" style="line-height: 0.5;">
+                            <p class="text-secondary text-uppercase">Category
+                            </p>
+                            <p>Web design
+                            </p>
+                        </li>
+                        <li class="pb-3" style="line-height: 0.5;">
+                            <p class="text-secondary text-uppercase">Client
+                            </p>
+                            <p>ASU Company
+                            </p>
+                        </li>
+                        <li class="pb-3" style="line-height: 0.5;">
+                            <p class="text-secondary text-uppercase">Project date
+                            </p>
+                            <p>01 March, 2020
+                            </p>
+                        </li>
+                        <li class="pb-3" style="line-height: 0.5;">
+                            <p class="text-secondary text-uppercase">Project URL
+                            </p>
+                            <a href="" class="text-success text-decoration-none">www.example.com</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-success rounded-5 px-4">Visite Website</button>
+    
+                </div>
+            </div>
+        </div>
+        
+      </div>
+      <footer class="py-4 mt-5 border-top border-secondary w-100 bg-secondary-subtle">
+        <p class="text-center text-body-secondary ">© Copyright <b>PhotoFolio</b>  All Rights Reserved
+
+        </p>
+
+        <ul class="nav justify-content-center mb-2">
+          <li class="nav-item me-2" style="border: 1px solid gray; border-radius: 50%;"><a href="#" class="nav-link px-2 text-body-secondary text-center" style="font-size: 16px; width: 40px;"><i class="bi bi-twitter-x "></i></a></li>
+          <li class="nav-item me-2" style="border: 1px solid gray; border-radius: 50%;"><a href="#" class="nav-link px-2 text-body-secondary text-center" style="font-size: 16px; width: 40px;"><i class="bi bi-facebook"></i></a></li>
+          <li class="nav-item me-2" style="border: 1px solid gray; border-radius: 50%;"><a href="#" class="nav-link px-2 text-body-secondary text-center" style="font-size: 16px; width: 40px;"><i class="bi bi-instagram"></i></a></li>
+          <li class="nav-item me-2" style="border: 1px solid gray; border-radius: 50%;"><a href="#" class="nav-link px-2 text-body-secondary text-center" style="font-size: 16px; width: 40px;"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+        <p class="text-center">Designed by <a href="" class="text-success text-decoration-none">BootstrapMade</a></p>
+      </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+</html>
